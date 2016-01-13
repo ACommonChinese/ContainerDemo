@@ -1,5 +1,5 @@
 # ContainerDemo
-###iOS(OC)侧滑控件很多页面
+###iOS(OC)侧滑控制很多页面
 
 ###图示
 ![](./1.png)  ![](./2.png)
