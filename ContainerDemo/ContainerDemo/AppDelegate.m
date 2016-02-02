@@ -2,12 +2,12 @@
 //  AppDelegate.m
 //  ContainerDemo
 //
-//  Created by qianfeng on 15/3/3.
+//  Created by 刘威振 on 15/3/3.
 //  Copyright (c) 2015年 WeiZhenLiu. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "ContainerViewController.h"
+#import "ZZContainerViewController.h"
 #import "FirstViewController.h"
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
@@ -40,10 +40,21 @@
     SevenViewController *sevenController   = [[SevenViewController alloc] init];
     sevenController.title                  = @"第7标题";
 
-    ContainerViewController *containerController = [[ContainerViewController alloc] init];
-    containerController.viewControllers          = @[firstController, secondController, thirdController, fourthController, fifthController, sixController, sevenController];
+    // ZZContainer
+    ZZContainerViewController *containerController = [[ZZContainerViewController alloc] init];
+    containerController.title = @"侧滑Demo";
+    [containerController makeConfiguration:^(ZZContainerConfiguration *configuration) {
+        configuration.viewControllers = @[firstController, secondController, thirdController, fourthController, fifthController, sixController, sevenController];
+        configuration.contentHeight = 300;
+        configuration.didChangeControllerHandler = ^(UIViewController *controller) {
+            // 当切换到具体的控制器回调
+            NSLog(@"index: %ld", [containerController.viewControllers indexOfObject:controller]);
+        };
+    }];
     
-    self.window.rootViewController = containerController;
+    UINavigationController *nivController = [[UINavigationController alloc] initWithRootViewController:containerController];
+    [nivController.navigationBar setTranslucent:NO];
+    self.window.rootViewController = nivController;
     self.window.backgroundColor    = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

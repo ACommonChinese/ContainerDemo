@@ -12,8 +12,6 @@
 		BC54AF3D1AA5E2B600D6826F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC54AF3C1AA5E2B600D6826F /* Images.xcassets */; };
 		BC54AF401AA5E2B600D6826F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC54AF3E1AA5E2B600D6826F /* LaunchScreen.xib */; };
 		BC54AF4C1AA5E2B600D6826F /* ContainerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF4B1AA5E2B600D6826F /* ContainerDemoTests.m */; };
-		BC54AF571AA5E31D00D6826F /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF561AA5E31D00D6826F /* ContainerViewController.m */; };
-		BC54AF5A1AA5E6EF00D6826F /* Topbar.m in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF591AA5E6EF00D6826F /* Topbar.m */; };
 		BC54AF921AA5F8C300D6826F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF911AA5F8C300D6826F /* FirstViewController.m */; };
 		BC54AF951AA5F8CB00D6826F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF941AA5F8CB00D6826F /* SecondViewController.m */; };
 		BC54AF981AA5F8D300D6826F /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF971AA5F8D300D6826F /* ThirdViewController.m */; };
@@ -22,6 +20,10 @@
 		BC54AFA31AA607E000D6826F /* SixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC54AFA21AA607E000D6826F /* SixViewController.m */; };
 		BCD7A09E1AA6980E00C54F9B /* SevenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD7A09D1AA6980E00C54F9B /* SevenViewController.m */; };
 		BCDD499A1AA9357A00128D1F /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDD49991AA9357A00128D1F /* TestViewController.m */; };
+		DA01213D1C604E7E009F1351 /* ZZContainerTopbar.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01213A1C604E7E009F1351 /* ZZContainerTopbar.m */; };
+		DA01213E1C604E7E009F1351 /* ZZContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01213C1C604E7E009F1351 /* ZZContainerViewController.m */; };
+		DA0121411C604EA9009F1351 /* UIViewController+ZZContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0121401C604EA9009F1351 /* UIViewController+ZZContainer.m */; };
+		DA0121441C604EBB009F1351 /* ZZContainerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0121431C604EBB009F1351 /* ZZContainerConfiguration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +47,6 @@
 		BC54AF451AA5E2B600D6826F /* ContainerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContainerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC54AF4A1AA5E2B600D6826F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC54AF4B1AA5E2B600D6826F /* ContainerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContainerDemoTests.m; sourceTree = "<group>"; };
-		BC54AF551AA5E31D00D6826F /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
-		BC54AF561AA5E31D00D6826F /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
-		BC54AF581AA5E6EF00D6826F /* Topbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topbar.h; sourceTree = "<group>"; };
-		BC54AF591AA5E6EF00D6826F /* Topbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topbar.m; sourceTree = "<group>"; };
 		BC54AF901AA5F8C300D6826F /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		BC54AF911AA5F8C300D6826F /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		BC54AF931AA5F8CB00D6826F /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -63,9 +61,16 @@
 		BC54AFA21AA607E000D6826F /* SixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixViewController.m; sourceTree = "<group>"; };
 		BCD7A09C1AA6980E00C54F9B /* SevenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SevenViewController.h; sourceTree = "<group>"; };
 		BCD7A09D1AA6980E00C54F9B /* SevenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SevenViewController.m; sourceTree = "<group>"; };
-		BCD7A09F1AA69A1F00C54F9B /* ViewWillShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewWillShow.h; sourceTree = "<group>"; };
 		BCDD49981AA9357A00128D1F /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		BCDD49991AA9357A00128D1F /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		DA0121391C604E7E009F1351 /* ZZContainerTopbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZContainerTopbar.h; sourceTree = "<group>"; };
+		DA01213A1C604E7E009F1351 /* ZZContainerTopbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZContainerTopbar.m; sourceTree = "<group>"; };
+		DA01213B1C604E7E009F1351 /* ZZContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZContainerViewController.h; sourceTree = "<group>"; };
+		DA01213C1C604E7E009F1351 /* ZZContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZContainerViewController.m; sourceTree = "<group>"; };
+		DA01213F1C604EA9009F1351 /* UIViewController+ZZContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZZContainer.h"; sourceTree = "<group>"; };
+		DA0121401C604EA9009F1351 /* UIViewController+ZZContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZZContainer.m"; sourceTree = "<group>"; };
+		DA0121421C604EBB009F1351 /* ZZContainerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZContainerConfiguration.h; sourceTree = "<group>"; };
+		DA0121431C604EBB009F1351 /* ZZContainerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZContainerConfiguration.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,13 +112,9 @@
 		BC54AF341AA5E2B600D6826F /* ContainerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DA0121381C604E5D009F1351 /* ZZContainer */,
 				BC54AF391AA5E2B600D6826F /* AppDelegate.h */,
 				BC54AF3A1AA5E2B600D6826F /* AppDelegate.m */,
-				BC54AF581AA5E6EF00D6826F /* Topbar.h */,
-				BC54AF591AA5E6EF00D6826F /* Topbar.m */,
-				BC54AF551AA5E31D00D6826F /* ContainerViewController.h */,
-				BC54AF561AA5E31D00D6826F /* ContainerViewController.m */,
-				BCD7A09F1AA69A1F00C54F9B /* ViewWillShow.h */,
 				BCD7A59B1AC2A9E800C96B28 /* SubViewControllers */,
 				BC54AF3C1AA5E2B600D6826F /* Images.xcassets */,
 				BC54AF3E1AA5E2B600D6826F /* LaunchScreen.xib */,
@@ -169,6 +170,21 @@
 				BCDD49991AA9357A00128D1F /* TestViewController.m */,
 			);
 			name = SubViewControllers;
+			sourceTree = "<group>";
+		};
+		DA0121381C604E5D009F1351 /* ZZContainer */ = {
+			isa = PBXGroup;
+			children = (
+				DA0121391C604E7E009F1351 /* ZZContainerTopbar.h */,
+				DA01213A1C604E7E009F1351 /* ZZContainerTopbar.m */,
+				DA01213B1C604E7E009F1351 /* ZZContainerViewController.h */,
+				DA01213C1C604E7E009F1351 /* ZZContainerViewController.m */,
+				DA01213F1C604EA9009F1351 /* UIViewController+ZZContainer.h */,
+				DA0121401C604EA9009F1351 /* UIViewController+ZZContainer.m */,
+				DA0121421C604EBB009F1351 /* ZZContainerConfiguration.h */,
+				DA0121431C604EBB009F1351 /* ZZContainerConfiguration.m */,
+			);
+			path = ZZContainer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0121411C604EA9009F1351 /* UIViewController+ZZContainer.m in Sources */,
 				BC54AFA01AA6078500D6826F /* FifthViewController.m in Sources */,
 				BC54AF9B1AA5F8E100D6826F /* FourthViewController.m in Sources */,
 				BC54AF951AA5F8CB00D6826F /* SecondViewController.m in Sources */,
@@ -278,10 +295,11 @@
 				BC54AF381AA5E2B600D6826F /* main.m in Sources */,
 				BCDD499A1AA9357A00128D1F /* TestViewController.m in Sources */,
 				BC54AF921AA5F8C300D6826F /* FirstViewController.m in Sources */,
-				BC54AF571AA5E31D00D6826F /* ContainerViewController.m in Sources */,
-				BC54AF5A1AA5E6EF00D6826F /* Topbar.m in Sources */,
+				DA01213E1C604E7E009F1351 /* ZZContainerViewController.m in Sources */,
 				BC54AF981AA5F8D300D6826F /* ThirdViewController.m in Sources */,
 				BC54AFA31AA607E000D6826F /* SixViewController.m in Sources */,
+				DA0121441C604EBB009F1351 /* ZZContainerConfiguration.m in Sources */,
+				DA01213D1C604E7E009F1351 /* ZZContainerTopbar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
